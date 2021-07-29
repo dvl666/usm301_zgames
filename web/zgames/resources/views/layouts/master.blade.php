@@ -14,7 +14,7 @@
       <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="{{ asset('img/logo.png')}}" class="logo"></a>
+              <a class="navbar-brand" href="{{route('registrar_consola')}}"><img src="{{ asset('img/logo.png')}}" class="logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -30,37 +30,7 @@
           </nav>
       </header>
       <main class="container-fluid">
-            <div class="row mt-5">
-                <div class="col-12 col-md-8 col-lg-5 mx-auto">
-                    <div class="card">
-                            <div class="card-header bg-warning">
-                                <span>Agregar Consola</span>
-                            </div>
-                            <div class="card-body">
-                                <div class="mb-3">
-                                    <label for="nombre-txt" class="form-label">Nombre</label>
-                                    <input type="text" id="nombre-txt" class="form-control">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="marca-select" class="form-label">Marca</label>
-                                    <select id=",arca-select" class="form-select">
-                                        <option value="Microsoft">Microsoft</option>
-                                        <option value="Sony">Sony</option>
-                                        <option value="Nintendo">Nintendo</option>
-                                        <option value="Sega">Sega</option>
-                                    </select>
-                                </div>
-                                <div class="mb_3">
-                                    <label for="anio-txt">Año de lanzamiento</label>
-                                    <input type="number" class="form-control" id="anio-txt">
-                                </div>
-                            </div>
-                            <div class="card-footer d-grid gap-1">
-                                <button type="button" class="btn btn-primary">Registrar</button>
-                            </div>
-                    </div>
-                </div>
-            </div>     
+               @yield('contenido')  
       </main>
     
 
